@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class Channel extends BaseEntity {
+public class Channel extends AbstractEntity {
 
     @Column(name = "name",length = 64)
     @NotBlank

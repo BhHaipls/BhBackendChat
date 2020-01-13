@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 
 @Entity
 @Data
-public class Message extends BaseEntity {
+public class Message extends AbstractEntity {
 
     @Column(name = "title")
     @NotBlank

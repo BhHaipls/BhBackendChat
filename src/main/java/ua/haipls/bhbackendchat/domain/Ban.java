@@ -8,7 +8,7 @@ import java.time.Duration;
 
 @Data
 @Entity
-public class Ban extends  BaseEntity {
+public class Ban extends  AbstractEntity {
 
     @Column(name = "reason",length = 256)
     @NotBlank

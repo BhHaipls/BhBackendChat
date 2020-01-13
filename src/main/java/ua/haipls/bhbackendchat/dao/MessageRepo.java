@@ -1,7 +1,9 @@
 package ua.haipls.bhbackendchat.dao;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import ua.haipls.bhbackendchat.domain.Message;
 
-public interface MessageRepo extends CrudRepository<Message,Long> {
+
+@Repository
+public interface MessageRepo extends CommonRepository<Message> {
 }

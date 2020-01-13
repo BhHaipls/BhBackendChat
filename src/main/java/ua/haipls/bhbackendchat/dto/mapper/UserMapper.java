@@ -5,9 +5,6 @@ import ua.haipls.bhbackendchat.domain.User;
 import ua.haipls.bhbackendchat.dto.UserDto;
 
 
-@Mapper
-public interface UserMapper {
-    User toEntity(UserDto dto);
-
-    UserDto toDto(User entity);
+@Mapper(componentModel = "spring")
+public interface UserMapper extends AbstractMapper<User,UserDto>{
 }

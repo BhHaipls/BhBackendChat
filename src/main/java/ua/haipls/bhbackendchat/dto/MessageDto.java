@@ -1,13 +1,13 @@
 package ua.haipls.bhbackendchat.dto;
 
-import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.SuperBuilder;
 import ua.haipls.bhbackendchat.domain.User;
 
 
 @Data
-@Builder
-public class MessageDto extends BaseDto {
+@SuperBuilder
+public class MessageDto extends AbstractDto {
 
     private String title;
 

@@ -1,15 +1,15 @@
 package ua.haipls.bhbackendchat.dto;
 
-import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.SuperBuilder;
 import ua.haipls.bhbackendchat.domain.Channel;
 import ua.haipls.bhbackendchat.domain.User;
 
 import java.time.Duration;
 
 @Data
-@Builder
-public class MuteDto {
+@SuperBuilder
+public class MuteDto extends AbstractDto {
 
     private String reason;
 

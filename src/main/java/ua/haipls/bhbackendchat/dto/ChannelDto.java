@@ -1,15 +1,15 @@
 package ua.haipls.bhbackendchat.dto;
 
-import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.SuperBuilder;
 import ua.haipls.bhbackendchat.domain.Message;
 import ua.haipls.bhbackendchat.domain.User;
 
 import java.util.List;
 
 @Data
-@Builder
-public class ChannelDto extends BaseDto {
+@SuperBuilder
+public class ChannelDto extends AbstractDto {
 
     private String name;
 

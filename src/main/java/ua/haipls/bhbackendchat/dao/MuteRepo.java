@@ -1,7 +1,9 @@
 package ua.haipls.bhbackendchat.dao;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import ua.haipls.bhbackendchat.domain.Mute;
 
-public interface MuteRepo extends CrudRepository<Mute,Long> {
+
+@Repository
+public interface MuteRepo extends CommonRepository<Mute> {
 }

@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "users")
 @Inheritance(strategy = InheritanceType.JOINED)
 @Data
-public class User extends BaseEntity {
+public class User extends AbstractEntity {
     @Column(name = "first_name",length = 32, nullable = false)
     private String firstName;
 

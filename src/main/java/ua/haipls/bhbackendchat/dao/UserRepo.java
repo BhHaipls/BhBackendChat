@@ -1,7 +1,9 @@
 package ua.haipls.bhbackendchat.dao;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import ua.haipls.bhbackendchat.domain.User;
 
-public interface UserRepo extends CrudRepository<User,Long> {
+
+@Repository
+public interface UserRepo extends CommonRepository<User> {
 }

@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Data
 @MappedSuperclass
-public abstract class BaseEntity {
+public abstract class AbstractEntity {
 
     @Id
     @Column(name = "id", updatable = false, nullable = false)

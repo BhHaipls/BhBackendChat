@@ -10,7 +10,7 @@ import java.time.Duration;
 
 @Data
 @Entity
-public class Mute extends  BaseEntity {
+public class Mute extends  AbstractEntity {
 
     @Column(name = "reason",length = 256)
     @NotBlank
