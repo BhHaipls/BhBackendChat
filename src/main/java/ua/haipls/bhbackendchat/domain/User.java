@@ -1,6 +1,7 @@
 package ua.haipls.bhbackendchat.domain;
 
 import lombok.Data;
+import ua.haipls.bhbackendchat.domain.Enum.Status;
 
 import javax.persistence.*;
 import java.util.Set;

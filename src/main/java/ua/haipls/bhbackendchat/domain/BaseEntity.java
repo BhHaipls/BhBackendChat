@@ -18,11 +18,11 @@ public abstract class BaseEntity {
 
     @CreationTimestamp
     @Column(name = "created_date", updatable = false)
-    private LocalDateTime created;
+    private LocalDateTime createdDate;
 
     @UpdateTimestamp
     @Column(name = "updated_date")
-    private LocalDateTime updated;
+    private LocalDateTime updatedDate;
 
 
 }
